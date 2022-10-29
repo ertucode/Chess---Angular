@@ -1,0 +1,13 @@
+.piece {
+    position: absolute;
+    
+    &.moving {
+        left: var(--active-loc-x);
+        bottom: var(--active-loc-y);
+    }
+
+    &.stationary {
+        left: calc(var(--cell-size) * (var(--loc-x) - 0.5) - var(--piece-size) / 2);
+        bottom: calc(var(--cell-size) * (var(--loc-y) - 0.5) - var(--piece-size) / 2);
+    }
+}

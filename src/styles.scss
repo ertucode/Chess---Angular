@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    --piece-size: 60px;
+    --grid-count: 8;
+
+    --cell-size: calc(var(--piece-size) + 5px);
+
+    --black-color: rgba(188, 70, 70, 0.542);
+    --white-color: white;
+}
